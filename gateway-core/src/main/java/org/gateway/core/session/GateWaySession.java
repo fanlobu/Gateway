@@ -9,6 +9,9 @@ public interface GateWaySession {
      // 1.获取泛化对象
      // 2.发起服务调用
 
+     Configuration getConfiguration();
+
+
      IGenericService getMappendService(String uri);
 
      Object get(String methodName, Map<String,Object> params);
